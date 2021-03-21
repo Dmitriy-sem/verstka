@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/2f9c6e40b3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Barbershop</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a class="nav_link" href="#">информация</a>
+                <a class="nav_link" href="#">новости</a>
+                <a class="nav_link" href="#">прайс-лист</a>
+                <a class="nav_link" href="#">магазин</a>
+                <a class="nav_link" href="#">контакты</a>
+
+                <a class="nav_enter" href="#"><i class="fas fa-sign-in-alt"></i> Вход</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="intro">
+                <img class="intro_img" src="./img/index-logo.png" alt="">
+            </div>
+            <div class="main_offer">
+                <div class="col">
+                    <div class="col_title">быстро</div>
+                    <div class="col_text">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО
+                        И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</div>
+                </div>
+
+                <div class="col">
+                    <div class="col_title">круто</div>
+                    <div class="col_text">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.</br>
+                        МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕЕ.</div>
+                </div>
+
+                <div class="col">
+                    <div class="col_title">дорого</div>
+                    <div class="col_text">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ
+                        ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?
+                    </div>
+                </div>
+            </div>
+
+
+        <section class="section">
+                <div class="section_container">
+                    <div class="section_col">
+                        <div class="section_title">
+                            новости
+                        </div>
+
+                        <div class="section_text">
+                            НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ
+                            ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+                        </div>
+
+                        <div class="section_date">
+                            11 января
+                        </div>
+
+                        <div class="section_text">
+                            В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ,
+                            ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+                        </div>
+
+                        <div class="section_date">
+                            18 января
+                        </div>
+
+                        <button class="btn_news news">все новости</button>
+                    </div>
+
+                    <div class="section_col  right_col"">
+                        <div class=" section_title">
+                        фотогалерея
+                    </div>
+
+                    <div class="photogallery">
+                        <div class="slider__item">
+                            <img class="photogallery_img" src="./img/photogallery.jpg" alt="Первый слайд">
+                        </div>
+                    
+                        <div class="slider__item">
+                            <img class="photogallery_img" src="./img/photogallery2.jpg" alt="Второй слайд">
+                        </div>
+                    
+                        <div class="slider__item">
+                            <img class="photogallery_img" src="./img/photogallery3.jpg" alt="Третий слайд">
+                        </div>
+                    </div>
+                    <div class="btn_second_col">
+                        <button class="btn_news previous_btn" onclick="minusSlide()">назад</button>
+                        <button class="btn_news previous_btn" onclick="plusSlide()">вперед</button>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+
+        <section class="section">
+            <div class="section_container">
+                <div class="section_col">
+                    <div class="section_title">
+                        контактная информация
+                    </div>
+
+                    <div class="section_text adress">
+                        БАРБЕРШОП «БОРОДИНСКИЙ»Б</br>
+                        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</br>
+                        ТЕЛЕФОН: +7 (495) 666-02-66
+                    </div>
+
+                    <div class="section_text time_work">
+                        ВРЕМЯ РАБОТЫ: </br>
+                        ПН—ПТ: С 10:00 ДО 22:00</br>
+                        СБ—ВС: С 10:00 ДО 19:00
+                    </div>
+
+                    <div class="btn_second_section">
+                        <button class="btn_news btn_how_get">как проехать</button>
+                        <button class="btn_news btn_feedback">обратная связь</button>
+                    </div>
+                </div>
+
+
+                <div class="section_col  right_col"">
+                    <div class=" section_title">
+                    ЗАПИСАТЬСЯ
+                </div>
+
+                <div class="section_text">
+                    УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И
+                    ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+                </div>
+                <div class="form">
+                    <form action="/" method="POST"">
+                        <input class=" form_input" type="date" name="name" placeholder="08.10.2017">
+                        <input class="form_input" type="time" name="name" placeholder="10:00">
+                        <input class="form_input" type="name" name="name" placeholder="Борода">
+                        <input class="form_input" type="number" name="name" placeholder="+7 123 456-78-90">
+                        <button class="btn_news form_btn" type="submit">отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_col">
+                    БАРБЕРШОП «БОРОДИНСКИЙ»Б</br>
+                    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</br>
+                    <a href="#">как нас найти?</a></br>
+                    ТЕЛЕФОН: +7 (495) 666-02-66
+                </div>
+                <div class="footer_col second_col">
+                    <div class="footer_title">давай дружить!</div>
+                    <div class="footer_icons">
+                        <div class="icons"><i class="fab fa-vk"></i></div>
+                        <div class="icons"><i class="fab fa-facebook-f"></i></div>
+                        <div class="icons"><i class="fab fa-instagram"></i></div>
+                    </div>
+                </div>
+                <div class="footer_col">
+                    <div class="footer_title">Разработано:</div>
+                    <div class="html_academy">html academy</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

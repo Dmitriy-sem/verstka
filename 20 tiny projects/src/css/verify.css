@@ -1,0 +1,57 @@
+.box_verify {
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 40px 30px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.verify_title{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.verify_text {
+    margin: 15px 0 30px;
+}
+
+.password_verify_item {
+    height: 140px;
+    width: 100px;
+    font-size: 80px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.password_verify_item::-webkit-outer-spin-button,
+.password_verify_item::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.password_verify_item:focus{
+    box-shadow: 0 0 4px 2px #6698f7;
+    outline: none;
+}
+
+.password_verify_item:valid{
+    border-color: #3498db;
+}
+
+.box_verify button {
+    margin-top: 40px;
+    font-size: 22px;
+    background-color: royalblue;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 25px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.box_verify button:hover {
+    background-color: #2448b4;
+}
+

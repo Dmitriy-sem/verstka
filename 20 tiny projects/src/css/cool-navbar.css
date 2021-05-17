@@ -1,0 +1,110 @@
+.cool_navbar {
+    font-size: 16px;
+    position: relative;
+    background: #373741;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.cool_navbar main {
+    margin-left: 5rem;
+    padding: 1rem;
+    color: #c9c9c9;
+    font-size: 20px;
+}
+
+.cn_navbar {
+    position: absolute;
+    background-color: #23232e;
+    transition: width 600ms ease;
+    height: 100vh;
+}
+
+.cn_navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    transition: width .6s ease;
+    width: 5rem;
+}
+
+.cn_navbar-nav:hover .cn_link-text{
+    display: block;
+}
+
+.cn_navbar-nav:hover {
+    width: 16rem;
+}
+
+.cn_nav-item {
+    width: 100%;
+}
+
+.cn_nav-item:last-child {
+    margin-top: auto;
+}
+
+.cn_nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #b6b6b6;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: .6s;
+}
+
+.cn_nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: #141418;
+    color: #ececec;
+}
+
+.cn_link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.cn_nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.fa-primary {
+    color: #ff7eee;
+}
+
+.fa-secondary {
+    color: #df49a6;
+}
+
+.fa-primary,
+.fa-secondary {
+    transition: .6s;
+}
+
+.cn_logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #ececec;
+    background: #141418;
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.cn_logo svg {
+    transform: rotate(0deg);
+    transition: .8s;
+}
+
+.cn_navbar:hover .cn_logo svg {
+    transform: rotate(-180deg);
+}

@@ -1,0 +1,79 @@
+.vertical-slider_container {
+    width: 99vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.vs_left-slide {
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+}
+
+.vs_left-slide > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.vs_left-slide h1 {
+    font-size: 40px;
+    margin: -30px 0 10px;
+}
+
+.vs_right-slide {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transition: transform .5s ease-in-out;
+}
+
+.vs_right-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.vs_action-buttons button {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    z-index: 3;
+    border: none;
+    padding: 15px;
+    cursor: pointer; 
+    color: #aaa;
+    font-size: 16px;
+}
+
+.vs_action-buttons button:hover { 
+    color: #222;
+}
+
+.vs_action-buttons button:focus { 
+    outline: none;
+}
+
+.vs_down-btn {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.vs_up-btn {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

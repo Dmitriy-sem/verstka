@@ -1,0 +1,39 @@
+.container_about{
+    color: #fff;
+    max-width: 1500px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+.container_about h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.image_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.image_row img {
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.image p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.image p span {
+    cursor: pointer;
+    transition: color .2s ease-in;
+}
+
+.image p span:hover {
+    color: #a0a0a0;
+}

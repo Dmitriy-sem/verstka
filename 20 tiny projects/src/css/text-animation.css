@@ -1,0 +1,25 @@
+.auto_text_effect .container {
+    flex-direction: column;
+    position: relative;
+}
+
+.speed_block{
+    position: absolute;
+    bottom: 140px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.speed_block input {
+    width: 50px;
+    padding: 5px;
+    font-size: 18px;
+    background: darksalmon;
+    border: none;
+    text-align: center;
+}
+
+.speed_block input:focus {
+    outline: none;
+}

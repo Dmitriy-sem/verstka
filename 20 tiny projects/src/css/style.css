@@ -1,0 +1,143 @@
+@import url('./about.css');
+@import url('./bg.css');
+@import url('./gen-pass.css');
+@import url('./glass-mor.css');
+@import url('./initial-cards.css');
+@import url('./split-landing.css');
+@import url('./progres-steps.css');
+@import url('./scroll-anim.css');
+@import url('./form-wave.css');
+@import url('./text-animation.css');
+@import url('./slider.css');
+@import url('./timer.css');
+@import url('./netflix.css');
+@import url('./verify.css');
+@import url('./verical-slider.css');
+@import url('./faq.css');
+@import url('./cool-navbar.css');
+@import url('./animated-navigation.css');
+@import url('./employee-box.css');
+@import url('./animated-profile-card.css');
+@import url('./footer.css');
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+	margin: 0;
+}
+
+section {
+	height: 100vh;
+	position: relative;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: inherit;
+}
+
+.scroll_down {
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 60px;
+	cursor: pointer;
+	font-size: 44px;
+	width: 60px;
+}
+
+.bg_change {
+	background-color: #faebd7;
+}
+
+.gen_pas {
+	background-color: #282b35;
+}
+
+.glass_morphism {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161623;
+}
+
+.initial_cards {
+	background-color: #423441;
+}
+
+.progres_steps{
+	background-color: #b9c8e6;
+	text-align: center;
+}
+
+.scroll_animation {
+	height: 200vh;
+	background-color: #efedd6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.form_wave{
+	background: steelblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.auto_text_effect {
+	background: darksalmon;
+}
+
+.slider_section{
+	background: #ddc9b1;
+	position: relative;
+}
+
+.faq {
+	background: #f1f1f1;
+}
+
+.animated_navigation{
+	background: linear-gradient(to bottom, #eafbff 0%, #eafbff 50%, #5290f9 50%, #5290f9 100%);
+}
+
+.employee_box{
+	background-color: #f4f4f4;
+}
+
+.about{
+	background-color: #161616;
+	height: 160vh;
+}
+
+.footer{
+	background-color: #2b2c30;
+	position: relative;
+}

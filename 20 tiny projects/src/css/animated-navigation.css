@@ -1,0 +1,82 @@
+.an_nav{
+    padding: 20px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    transition: width .6s linear;
+}
+
+.an_nav-active {
+    width: 380px;
+}
+
+.an_nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 0;
+    transition: width .6s linear;
+}
+
+.an_nav-active ul {
+    width: 100%;
+}
+
+.an_nav ul li {
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform .6s linear, opacity .6s linear;
+}
+
+.an_nav-active ul li{
+    opacity: 1;
+    transform: rotateY(360deg);
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.an_nav ul a {
+    color: #000;
+    text-decoration: none;
+}
+
+.an_icon{
+    background: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    position: relative;
+    height: 30px;
+    width: 40px;
+}
+
+.an_icon:focus{
+    outline: none;
+}
+
+.an_line{
+    background-color: #5290f9;
+    height: 2px;
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    transition: transform .6s linear;
+}
+
+.an_line2{
+    top: auto;
+    bottom: 10px;
+}
+
+.an_nav-active .an_line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+}
+
+.an_nav-active .an_line2 {
+    transform: rotate(765deg) translateY(-5.5px);
+}

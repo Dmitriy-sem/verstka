@@ -1,0 +1,77 @@
+.fw_container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px 60px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.fw_container h1 {
+    margin: 20px  0 30px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.fw_container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.fw_container input:focus{
+    outline: none;
+    border-bottom-color: lightblue;
+}
+
+.fw_btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.fw_btn:active {
+    transform: scale(0.98);
+}
+
+.fw_text{
+    margin-top: 25px;
+}
+
+.form-control label{
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.form-control label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: transform .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}

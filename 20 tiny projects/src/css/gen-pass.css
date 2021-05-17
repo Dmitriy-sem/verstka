@@ -1,0 +1,157 @@
+.gen_pas .container{
+    text-align: center;
+    color: #fff;
+}
+
+.result_field{
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    font-size: 26px;
+    border: 1px solid #67abf8;
+    background: #4e4d55;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.result_field i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.pas_result:focus{
+    outline: none;
+    box-shadow: 0 1px 8px #67abf8;
+}
+
+.pas_result::placeholder{
+    font-size: 20px;
+}
+
+.choice_pas{
+    width: 130px;
+    text-align: left;
+    margin: 20px auto;
+    font-size: 24px;
+}
+
+.choice_pas input[type="checkbox"] {
+    transform:scale(1.5);
+    margin-right: 10px;
+}
+
+.choice_pas label{
+    display: block;
+}
+
+.gener_pas{
+    border: none;
+    background: #664aff;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.gen_pas_circle {
+    top: 27px;
+    left: 82px;
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale .5s ease-out;
+    pointer-events: none;
+}
+
+@keyframes scale {
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
+
+.range {
+    height: 80px;
+    width: 380px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 0 65px 0 45px;
+    margin: 60px auto 0;
+}
+
+.slider_value {
+    position: relative;
+    width: 97%;
+}
+
+.slider_value span{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    color: #fff;
+    top: -40px;
+    left: 40%;
+    transform: translateX(-50%);
+    line-height: 55px;
+    z-index: 2;
+}
+
+.slider_value span::after{
+    content: '';
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background-color: #664aff;
+    color: #fff;
+    transform: translateX(-50%) rotate(45deg);
+    line-height: 55px;
+    z-index: -1;
+    left: 50%;
+    border: 3px solid #fff;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.range .field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.range .field input {
+    -webkit-appearance: none;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.range .field .value {
+    position: absolute;
+    font-size: 18px;
+    color: #664aff;
+    font-weight: 600;
+}
+
+.range .field .value.left {
+    left: -22px;
+}
+
+.range .field .value.right {
+    right: -43px;
+}

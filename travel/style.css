@@ -1,0 +1,493 @@
+body {
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.travel_container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.iceland {
+    background: url('./img/bg1.jpg');
+}
+
+.mountains {
+    background: url('./img/bg2.jpg');
+}
+
+.seatravel {
+    background: url('./img/bg3.jpg');
+}
+
+.beautytour {
+    background: url('./img/bg4.jpg');
+}
+
+.besttravel {
+    background: url('./img/bg5.jpg');
+}
+
+.slide {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: transform .5s ease;
+}
+
+/*Glass side*/
+
+.glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    height: inherit;
+    width: 40%;
+    transition: transform .5s ease;
+}
+
+.seatravel .glass,
+.besttravel .glass{
+    transform: translateX(150%);
+}
+
+.follow_icons {
+    margin: 25px 0 0 15%;
+    max-width: 200px;
+    font-size: 25px;
+}
+
+.follow_icons div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow_icons div span {
+    text-transform: uppercase;
+}
+
+.follow_icons div a {
+    color: #000;
+}
+
+.empty{
+    height: 67px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.title {
+    font-size: 200px;
+    color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.info {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    max-width: 550px;
+}
+
+.number{
+    font-size: 50px;
+    color: #d9d9d9;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.text_wrapper{
+    padding-left: 30px;
+}
+
+.description_title{
+    font-size: 55px;
+    white-space: nowrap;
+}
+
+.description_text{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/*Another side*/
+
+.another_side{
+    width: 60%;
+}
+
+.part_of_title{
+    font-size: 200px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: -25%;
+}
+
+.hamburger_container{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
+    height: 13px;
+    z-index: 2;
+}
+
+.hamburger1,
+.hamburger2{
+    background-color: #fff;
+    height: 3px;
+    width: 40px;
+    border-radius: 10px;
+    transition: transform .5s ease-in;
+}
+
+.hamburger2{
+    margin-top: 5px;
+}
+
+.hamburger1_active{
+    background-color: #000;
+    transform: rotate(45deg);
+    margin-top: 10px;
+}
+
+.hamburger2_active{
+    background-color: #000;
+    transform: rotate(-45deg);
+    margin-top: -2.65px;
+}
+
+.switcher{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu{
+    height: 100vh;
+    width: 0;
+    background-color: rgba(240, 240, 240, 0.8);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: width .5s ease-in;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.active_menu{
+    width: 29vw;
+    z-index: 1;
+}
+
+.menu_item{
+    margin-top: 50px;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.menu_item:first-child{
+    margin-top: 0;
+}
+
+.text_img div:hover {
+    background: rgba(240, 240, 240, 0.8);
+    mix-blend-mode: lighten;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 1);
+}
+
+.ic_img:hover {
+    background: url('./img/icelandtext.jpg');
+}
+
+.moun_img:hover {
+    background: url('./img/Mount-Everest-1.jpg');
+}
+
+.sea_img:hover {
+    background: url('./img/seatext.jpg');
+}
+
+.beaut_img:hover {
+    background: url('./img/paristext.jpg');
+}
+
+.best_img:hover {
+    background: url('./img/besttext.jpg');
+    background-size: cover;
+}
+
+.contact{
+    text-align: center;
+    cursor: pointer;
+    margin-top: 100px;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+/*Modal Window Contac*/
+
+.modal_wrapper{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    display: block;
+}
+
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 700px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    pointer-events: all;
+    transform: translate(-210%, -230%);
+    transition: transform .5s ease-out;
+}
+
+.modal_wrapper-active{
+    background-color: rgba(0, 0, 0, 0.6);
+    pointer-events: all;
+}
+
+.modal-active{
+    transform: translate(-50%, -50%);
+}
+
+.modal i{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modal form{
+    padding: 0 20px;
+}
+
+.sender_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal label {
+    display: block;
+    margin-top: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.modal input {
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    display: block;
+    height: 40px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+.modal input:focus {
+    outline: none;
+}
+
+.modal textarea {
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 0 0 5px;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    resize: none;
+}
+
+.modal textarea:focus {
+    outline: none;
+}
+
+.send{
+    font-size: 18px;
+    margin: 20px 0;
+    float: right;
+    border: none;
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Adaptation*/
+
+@media (max-width: 1440px) {
+    .hamburger{
+        right: 50px;
+    }
+
+    .hamburger i{
+        font-size: 50px;
+    }
+
+    .part_of_title{
+        margin-left: -10%;
+    }
+
+    .glass,
+    .another_side{
+        width: 50%;
+    }
+
+    .switcher{
+        font-size: 60px;
+    }
+
+    .title{
+        font-size: 180px;
+    }
+
+    .part_of_title {
+        font-size: 180px;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .hamburger{
+        right: 30px;
+    }
+
+    .title{
+        font-size: 140px;
+    }
+
+    .part_of_title {
+        font-size: 140px;
+    }
+
+    .text_wrapper{
+        padding-left: 30px;
+    }
+
+    .number,
+    .description_title{
+        font-size: 50px;
+    }
+
+    .description_text{
+        font-size: 18px;
+    }
+
+    .switcher{
+        font-size: 55px;
+    }
+
+    .menu{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title{
+        font-size: 80px;
+    }
+
+    .part_of_title{
+        font-size: 80px;
+        margin-left: 5px;
+    }
+
+    .number,
+    .description_title{
+        font-size: 25px;
+    }
+
+    .text_wrapper{
+        padding-left: 10px;
+    }
+
+    .description_text{
+        font-size: 12px;
+    }
+
+    .follow_icons{
+        font-size: 18px;
+        margin: 30px 20px 0;
+    }
+
+    .iceland .title{
+        font-size: 120px;
+    }
+
+    .iceland .part_of_title{
+        font-size: 100px;
+        margin-left: 5px;
+    }
+
+    .beautytour .part_of_title{
+        font-size: 68px;
+    }
+
+    .active_menu{
+        width: 100vw;
+        font-size: 50px;
+    }
+
+    .hamburger_container{
+        right: 20px;
+    }
+
+    .modal{
+        width: auto;
+    }
+
+    .sender_info{
+        display: block;
+    }
+}

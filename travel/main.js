@@ -56,6 +56,12 @@ menuBtn.addEventListener('click', () => {
     menu.classList.toggle('active_menu')
     line1.classList.toggle('hamburger1_active')
     line2.classList.toggle('hamburger2_active')
+    window.addEventListener('click', (e) => {
+        const classes = ['part_of_title', 'svg_swch', 'title', 'glass', 'description', 'column', 'description_title', 'description_text']
+        if (classes.includes(e.target.className)) {
+            closeMenu()
+        }
+    })
 })
 
 function closeMenu() {

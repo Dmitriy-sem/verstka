@@ -1,5 +1,5 @@
 # Verstka
-[20 tiny projects](https://dmitriy-sem.github.io/verstka/20%20tiny%20projects/)
+[20 tiny projects](https://dmitriy-sem.github.io/verstka/20%20tiny%20projects/)<br />
 [barbershop](https://dmitriy-sem.github.io/verstka/barbershop/)<br />
 [iCaria](https://dmitriy-sem.github.io/verstka/iacria/)<br />
 [game sos](https://dmitriy-sem.github.io/verstka/game%20sos/)<br />
